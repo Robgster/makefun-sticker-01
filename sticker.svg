@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- make.fun sticker: a robot agent that just won, crowned. Flat colours only, so it prints die-cut. -->
+  <defs>
+    <path id="topArc" d="M 152 512 A 360 360 0 0 1 872 512"/>
+    <path id="spark" d="M 0 -30 Q 6 -6 30 0 Q 6 6 0 30 Q -6 6 -30 0 Q -6 -6 0 -30 Z"/>
+  </defs>
+
+  <!-- die-cut white border, dark face, magenta ring -->
+  <circle cx="512" cy="512" r="500" fill="#FFFFFF"/>
+  <circle cx="512" cy="512" r="470" fill="#16132B"/>
+  <circle cx="512" cy="512" r="440" fill="none" stroke="#FF2E88" stroke-width="10"/>
+
+  <!-- top arc line -->
+  <text font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="74" fill="#FFD23F" letter-spacing="4">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">MY AGENT WON</textPath>
+  </text>
+
+  <g transform="translate(0 30)">
+  <!-- sparkles -->
+  <use href="#spark" transform="translate(316 282) scale(0.9)" fill="#FFD23F"/>
+  <use href="#spark" transform="translate(710 276) scale(0.7)" fill="#FFD23F"/>
+
+  <!-- crown -->
+  <polygon points="380,330 380,215 446,270 512,190 578,270 644,215 644,330" fill="#FFD23F"/>
+  <circle cx="380" cy="215" r="17" fill="#FFD23F"/>
+  <circle cx="512" cy="190" r="17" fill="#FFD23F"/>
+  <circle cx="644" cy="215" r="17" fill="#FFD23F"/>
+
+  <!-- robot head -->
+  <rect x="292" y="420" width="40" height="100" rx="14" fill="#FF2E88"/>
+  <rect x="692" y="420" width="40" height="100" rx="14" fill="#FF2E88"/>
+  <rect x="322" y="320" width="380" height="290" rx="80" fill="#FF2E88"/>
+  <circle cx="440" cy="455" r="58" fill="#FFFFFF"/>
+  <circle cx="584" cy="455" r="58" fill="#FFFFFF"/>
+  <circle cx="450" cy="447" r="26" fill="#16132B"/>
+  <circle cx="594" cy="447" r="26" fill="#16132B"/>
+  <path d="M 450 535 Q 512 585 574 535" fill="none" stroke="#16132B" stroke-width="18" stroke-linecap="round"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="512" y="795" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="146" fill="#FFFFFF" textLength="640" lengthAdjust="spacingAndGlyphs">make.fun</text>
+</svg>
